@@ -59,8 +59,9 @@
 #include "ble_advdata.h"
 #include "ble_advertising.h"
 #include "ble_bas.h"
-#include "ble_hrs.h"
-#include "ble_hts.h"
+#include "ble_hms.h"
+//#include "ble_hrs.h"
+//#include "ble_hts.h"
 #include "ble_dis.h"
 #include "ble_conn_params.h"
 #include "sensorsim.h"
@@ -83,9 +84,9 @@
 #include "nrf_log_default_backends.h"
 
 
-#define DEVICE_NAME                     "Nordic_HTS"                                /**< Name of device. Will be included in the advertising data. */
+#define DEVICE_NAME                     "Nordic_HMS"                                /**< Name of device. Will be included in the advertising data. */
 #define MANUFACTURER_NAME               "NordicSemiconductor"                       /**< Manufacturer. Will be passed to Device Information Service. */
-#define MODEL_NUM                       "NS-HTS-EXAMPLE"                            /**< Model number. Will be passed to Device Information Service. */
+#define MODEL_NUM                       "NS-HMS-EXAMPLE"                            /**< Model number. Will be passed to Device Information Service. */
 #define MANUFACTURER_ID                 0x1122334455                                /**< Manufacturer ID, part of System ID. Will be passed to Device Information Service. */
 #define ORG_UNIQUE_ID                   0x667788                                    /**< Organizational Unique ID, part of System ID. Will be passed to Device Information Service. */
 
