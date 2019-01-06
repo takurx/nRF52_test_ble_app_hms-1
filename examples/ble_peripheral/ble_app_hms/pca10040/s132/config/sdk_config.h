@@ -360,7 +360,14 @@
  
 
 #ifndef BLE_HTS_ENABLED
-#define BLE_HTS_ENABLED 0
+#define BLE_HTS_ENABLED 1
+#endif
+
+// <q> BLE_HMS_ENABLED  - ble_hms - Heart Rate Service and Health Thermometer Service
+ 
+
+#ifndef BLE_HMS_ENABLED
+#define BLE_HMS_ENABLED 1
 #endif
 
 // <q> BLE_IAS_C_ENABLED  - ble_ias_c - Immediate Alert Service Client

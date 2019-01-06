@@ -10913,3 +10913,8 @@ examples/ble_peripheral/ble_app_hms/pca10040/s132/ses/Output/ble_app_hrs_pca1004
 examples/ble_peripheral/ble_app_hms/pca10040/s132/ses/Output/Release/Exe/ble_app_hrs_pca10040_s132.map
 examples/ble_peripheral/ble_app_hms/pca10040/s132/ses/Output/ble_app_hrs_pca10040_s132 Release/Obj/ble_hms.d
 examples/ble_peripheral/ble_app_hms/pca10040/s132/ses/Output/ble_app_hrs_pca10040_s132 Release/Obj/ble_hms.o
+examples/ble_peripheral/ble_app_hms/pca10040/s132/ses/Output/Release/Exe/ble_app_hrs_pca10040_s132.hex
+examples/ble_peripheral/ble_app_hms/pca10040/s132/ses/Output/Release/Exe/ble_app_hrs_pca10040_s132.elf
+examples/ble_peripheral/ble_app_hms/pca10040/s132/ses/Output/ble_app_hrs_pca10040_s132 Release/Obj/nrf_sdh.asm
+examples/ble_peripheral/ble_app_hms/pca10040/s132/ses/Output/ble_app_hrs_pca10040_s132 Release/Obj/ble_dis.asm
+examples/ble_peripheral/ble_app_hms/pca10040/s132/ses/Output/ble_app_hrs_pca10040_s132 Release/Obj/ble_bas.asm

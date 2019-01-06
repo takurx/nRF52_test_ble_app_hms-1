@@ -146,7 +146,6 @@ static void on_hrm_cccd_write(ble_hrs_t * p_hrs, ble_gatts_evt_write_t const * p
  * @param[in]   p_hts         Health Thermometer Service structure.
  * @param[in]   p_evt_write   Write event received from the BLE stack.
  */
-/*
 static void on_cccd_write(ble_hts_t * p_hts, ble_gatts_evt_write_t const * p_evt_write)
 {
     if (p_evt_write->len == 2)
@@ -169,7 +168,6 @@ static void on_cccd_write(ble_hts_t * p_hts, ble_gatts_evt_write_t const * p_evt
         }
     }
 }
-*/
 
 /**@brief Function for handling the Write event.
  *
