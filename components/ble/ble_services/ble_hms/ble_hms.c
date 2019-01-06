@@ -83,12 +83,10 @@ static void on_connect(ble_hrs_t * p_hrs, ble_evt_t const * p_ble_evt)
  * @param[in]   p_hts       Health Thermometer Service structure.
  * @param[in]   p_ble_evt   Event received from the BLE stack.
  */
-/*
-static void on_connect(ble_hts_t * p_hts, ble_evt_t const * p_ble_evt)
+static void on_connect_hts(ble_hts_t * p_hts, ble_evt_t const * p_ble_evt)
 {
     p_hts->conn_handle = p_ble_evt->evt.gatts_evt.conn_handle;
 }
-*/
 
 /**@brief Function for handling the Disconnect event.
  *
@@ -105,13 +103,11 @@ static void on_disconnect(ble_hrs_t * p_hrs, ble_evt_t const * p_ble_evt)
  * @param[in]   p_hts       Health Thermometer Service structure.
  * @param[in]   p_ble_evt   Event received from the BLE stack.
  */
-/*
-static void on_disconnect(ble_hts_t * p_hts, ble_evt_t const * p_ble_evt)
+static void on_disconnect_hts(ble_hts_t * p_hts, ble_evt_t const * p_ble_evt)
 {
     UNUSED_PARAMETER(p_ble_evt);
     p_hts->conn_handle = BLE_CONN_HANDLE_INVALID;
 }
-*/
 
 /**@brief Function for handling write events to the Heart Rate Measurement characteristic.
  *
@@ -188,8 +184,7 @@ static void on_write(ble_hrs_t * p_hrs, ble_evt_t const * p_ble_evt)
  * @param[in]   p_hts       Health Thermometer Service structure.
  * @param[in]   p_ble_evt   Event received from the BLE stack.
  */
-/*
-static void on_write(ble_hts_t * p_hts, ble_evt_t const * p_ble_evt)
+static void on_write_hts(ble_hts_t * p_hts, ble_evt_t const * p_ble_evt)
 {
     ble_gatts_evt_write_t const * p_evt_write = &p_ble_evt->evt.gatts_evt.params.write;
 
@@ -198,7 +193,6 @@ static void on_write(ble_hts_t * p_hts, ble_evt_t const * p_ble_evt)
         on_cccd_write(p_hts, p_evt_write);
     }
 }
-*/
 
 /**@brief Function for handling the HVC event.
  *
@@ -251,15 +245,15 @@ void ble_hts_on_ble_evt(ble_evt_t const * p_ble_evt, void * p_context)
     switch (p_ble_evt->header.evt_id)
     {
         case BLE_GAP_EVT_CONNECTED:
-            on_connect(p_hts, p_ble_evt);
+            on_connect_hts(p_hts, p_ble_evt);
             break;
 
         case BLE_GAP_EVT_DISCONNECTED:
-            on_disconnect(p_hts, p_ble_evt);
+            on_disconnect_hts(p_hts, p_ble_evt);
             break;
 
         case BLE_GATTS_EVT_WRITE:
-            on_write(p_hts, p_ble_evt);
+            on_write_hts(p_hts, p_ble_evt);
             break;
 
         case BLE_GATTS_EVT_HVC:
